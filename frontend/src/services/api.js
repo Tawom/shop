@@ -7,6 +7,7 @@ const api = axios.create({
   headers: {
     "Content-Type": "application/json",
   },
+  timeout: 60000, // 60 second timeout for free tier cold starts
 });
 
 // Add token to requests if available
@@ -19,6 +20,17 @@ api.interceptors.request.use(
     return config;
   },
   (error) => {
+    return Promise.reject(error);
+  }
+);
+
+// Response interceptor for better error handling
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.code === "ECONNABORTED") {
+      console.warn("Request timeout - server may be waking up (free tier)");
+    }
     return Promise.reject(error);
   }
 );
