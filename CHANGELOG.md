@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2025-11-26
 
 ### Added
+
 - ✨ Full MERN stack e-commerce platform
 - 🔐 User authentication with JWT
 - 🛒 Shopping cart with localStorage persistence
@@ -25,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Features by Module
 
 #### Authentication & Authorization
+
 - User registration with email validation
 - Secure login with JWT tokens
 - Password reset via email
@@ -32,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Profile management
 
 #### Product Management
+
 - CRUD operations for products
 - Category filtering
 - Search functionality
@@ -41,6 +44,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Automatic rating calculations
 
 #### Shopping & Orders
+
 - Add to cart functionality
 - Cart persistence across sessions
 - Checkout process
@@ -49,6 +53,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Order history
 
 #### Admin Features
+
 - Dashboard with statistics (revenue, orders, users, products)
 - User management (view, edit, delete, assign roles)
 - Product management (create, update, delete)
@@ -58,12 +63,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Low stock warnings (< 10 items)
 
 #### Email System
+
 - Welcome email on registration
 - Password reset emails
 - Order confirmation emails
 - Order status update notifications
 
 #### DevOps & Deployment
+
 - Docker support with docker-compose
 - Multi-stage Docker builds
 - Nginx configuration for production
@@ -73,6 +80,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CI/CD ready
 
 ### Technical Stack
+
 - **Frontend**: React 19, Vite 7, Tailwind CSS 4, React Router DOM 7
 - **Backend**: Node.js 20, Express 5, MongoDB, Mongoose 9
 - **Security**: JWT, bcrypt, CORS, input validation
@@ -81,6 +89,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **DevOps**: Docker, Docker Compose, Render, MongoDB Atlas
 
 ### Security
+
 - Password hashing with bcrypt
 - JWT token authentication
 - Protected routes with middleware
@@ -90,6 +99,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Secure password reset flow
 
 ### Documentation
+
 - Comprehensive README
 - API documentation
 - Docker deployment guide
@@ -101,12 +111,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.3.0] - 2025-11-26
 
 ### Added
+
 - Product review and rating system
 - Low stock alert system
 - Inventory management improvements
 - Admin dashboard enhancements
 
 ### Fixed
+
 - Review validation bug (JWT field mapping)
 - Email template data fallbacks
 - Nodemailer API usage
@@ -114,18 +126,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.2.0] - 2025-11-26
 
 ### Added
+
 - Email notification system
 - Password reset functionality
 - Order status email notifications
 - Email templates (4 types)
 
 ### Changed
+
 - Improved error handling
 - Better CORS configuration
 
 ## [0.1.0] - 2025-11-26
 
 ### Added
+
 - Initial project setup
 - Basic authentication system
 - Product CRUD operations
@@ -140,6 +155,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Future Releases
 
 ### [1.1.0] - Planned
+
 - [ ] Payment integration (Stripe/PayPal)
 - [ ] Wishlist feature
 - [ ] Advanced analytics
@@ -147,6 +163,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [ ] Coupon system
 
 ### [2.0.0] - Planned
+
 - [ ] Real-time notifications (Socket.io)
 - [ ] Product recommendations
 - [ ] Advanced search (Elasticsearch)

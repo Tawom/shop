@@ -35,6 +35,7 @@ Thank you for considering contributing to this project! This document provides g
 ## 📝 Coding Standards
 
 ### JavaScript/React
+
 - Use ES6+ syntax
 - Follow React Hooks best practices
 - Use functional components
@@ -42,27 +43,32 @@ Thank you for considering contributing to this project! This document provides g
 - Use meaningful variable/function names
 
 ### Commit Messages
+
 - Use present tense ("Add feature" not "Added feature")
 - Use imperative mood ("Move cursor to..." not "Moves cursor to...")
 - Limit first line to 72 characters
 - Reference issues: "Fix: resolve login bug (#123)"
 
 ### Code Style
+
 ```javascript
 // Good
 const fetchProducts = async () => {
   try {
-    const response = await api.get('/products');
+    const response = await api.get("/products");
     return response.data;
   } catch (error) {
-    console.error('Error fetching products:', error);
+    console.error("Error fetching products:", error);
     throw error;
   }
 };
 
 // Avoid
-function fetchProducts(){
-  return api.get('/products').then(r=>r.data).catch(e=>console.log(e))
+function fetchProducts() {
+  return api
+    .get("/products")
+    .then((r) => r.data)
+    .catch((e) => console.log(e));
 }
 ```
 

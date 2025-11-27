@@ -15,10 +15,12 @@ A modern, full-featured e-commerce platform built with the MERN stack (MongoDB, 
 ### Demo Credentials
 
 **Regular User:**
+
 - Email: demo@example.com
 - Password: demo123
 
 **Admin User:**
+
 - Email: admin@example.com
 - Password: admin123
 
@@ -27,6 +29,7 @@ A modern, full-featured e-commerce platform built with the MERN stack (MongoDB, 
 ## ✨ Features
 
 ### 🛒 Customer Features
+
 - **Product Catalog** - Browse products with search, filtering, and pagination
 - **Product Details** - Detailed view with images, descriptions, and reviews
 - **Shopping Cart** - Add/remove items, update quantities, persistent cart
@@ -37,6 +40,7 @@ A modern, full-featured e-commerce platform built with the MERN stack (MongoDB, 
 - **Password Recovery** - Forgot password with email reset link
 
 ### 👨‍💼 Admin Features
+
 - **Admin Dashboard** - Real-time statistics (revenue, orders, users, products)
 - **User Management** - View, edit, delete users, assign admin roles
 - **Product Management** - CRUD operations for products with image upload
@@ -46,6 +50,7 @@ A modern, full-featured e-commerce platform built with the MERN stack (MongoDB, 
 - **Low Stock Alerts** - Visual warnings for products running low
 
 ### 🔐 Security Features
+
 - JWT authentication with httpOnly cookies
 - Password hashing with bcrypt
 - Role-based access control (User/Admin)
@@ -58,6 +63,7 @@ A modern, full-featured e-commerce platform built with the MERN stack (MongoDB, 
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - **React 19** - UI library
 - **Vite** - Build tool and dev server
 - **React Router DOM 7** - Client-side routing
@@ -66,6 +72,7 @@ A modern, full-featured e-commerce platform built with the MERN stack (MongoDB, 
 - **Context API** - State management
 
 ### Backend
+
 - **Node.js** - Runtime environment
 - **Express.js 5** - Web framework
 - **MongoDB** - NoSQL database
@@ -76,6 +83,7 @@ A modern, full-featured e-commerce platform built with the MERN stack (MongoDB, 
 - **Nodemailer** - Email notifications
 
 ### DevOps & Deployment
+
 - **Docker** - Containerization
 - **Docker Compose** - Multi-container orchestration
 - **Render** - Cloud hosting (Backend & Frontend)
@@ -172,29 +180,32 @@ shop/
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/Tawom/shop.git
    cd shop
    ```
 
 2. **Backend Setup**
+
    ```bash
    cd backend
    npm install
-   
+
    # Create .env file
    cp ../.env.example .env
    # Edit .env with your configuration
-   
+
    # Start backend
    npm start
    ```
 
 3. **Frontend Setup** (in a new terminal)
+
    ```bash
    cd frontend
    npm install
-   
+
    # Start frontend
    npm run dev
    ```
@@ -226,6 +237,7 @@ docker-compose up -d
 ### Individual Docker Builds
 
 **Backend:**
+
 ```bash
 cd backend
 docker build -t ecommerce-backend .
@@ -233,6 +245,7 @@ docker run -p 3000:3000 --env-file .env ecommerce-backend
 ```
 
 **Frontend:**
+
 ```bash
 cd frontend
 docker build -t ecommerce-frontend .
@@ -335,15 +348,19 @@ PUT    /api/admin/orders/:id/status # Update order status
 ## 📸 Screenshots
 
 ### Homepage
+
 ![Homepage](https://via.placeholder.com/800x400?text=Homepage+Screenshot)
 
 ### Product Details
+
 ![Product Details](https://via.placeholder.com/800x400?text=Product+Details)
 
 ### Shopping Cart
+
 ![Shopping Cart](https://via.placeholder.com/800x400?text=Shopping+Cart)
 
 ### Admin Dashboard
+
 ![Admin Dashboard](https://via.placeholder.com/800x400?text=Admin+Dashboard)
 
 ---
@@ -351,24 +368,28 @@ PUT    /api/admin/orders/:id/status # Update order status
 ## 🔄 Workflow & Features Implementation
 
 ### Phase 1: Foundation ✅
+
 - User authentication (JWT)
 - Product CRUD operations
 - Shopping cart (localStorage)
 - Basic routing
 
 ### Phase 2: Core Features ✅
+
 - Order management
 - User profile
 - Admin dashboard
 - File uploads
 
 ### Phase 3: Advanced Features ✅
+
 - Email notifications
 - Product reviews & ratings
 - Inventory management
 - Low stock alerts
 
 ### Phase 4: DevOps ✅
+
 - Docker containerization
 - Cloud deployment (Render)
 - MongoDB Atlas integration
@@ -381,30 +402,35 @@ PUT    /api/admin/orders/:id/status # Update order status
 ### Manual Testing Checklist
 
 **Authentication:**
+
 - [ ] User registration
 - [ ] User login
 - [ ] Password reset
 - [ ] JWT token validation
 
 **Products:**
+
 - [ ] View product catalog
 - [ ] Search products
 - [ ] Filter by category
 - [ ] Product details page
 
 **Shopping Cart:**
+
 - [ ] Add to cart
 - [ ] Update quantities
 - [ ] Remove items
 - [ ] Cart persistence
 
 **Orders:**
+
 - [ ] Create order
 - [ ] View order history
 - [ ] Order status updates
 - [ ] Email notifications
 
 **Admin:**
+
 - [ ] Dashboard statistics
 - [ ] User management
 - [ ] Product management
