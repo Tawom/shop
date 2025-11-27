@@ -36,6 +36,13 @@ const Login = () => {
           </div>
         )}
 
+        {loading && (
+          <div className="bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3 rounded mb-4">
+            Connecting to server... This may take 30-50 seconds on first load
+            (free tier).
+          </div>
+        )}
+
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2">
