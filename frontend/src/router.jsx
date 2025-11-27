@@ -18,78 +18,83 @@ import AdminFiles from "./pages/AdminFiles.jsx";
 import Debug from "./pages/Debug.jsx";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Layout />,
+      errorElement: <ErrorBoundary />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "product/:id",
+          element: <ProductDetails />,
+        },
+        {
+          path: "cart",
+          element: <Cart />,
+        },
+        {
+          path: "login",
+          element: <Login />,
+        },
+        {
+          path: "register",
+          element: <Register />,
+        },
+        {
+          path: "profile",
+          element: <Profile />,
+        },
+        {
+          path: "forgot-password",
+          element: <ForgotPassword />,
+        },
+        {
+          path: "reset-password/:token",
+          element: <ResetPassword />,
+        },
+        {
+          path: "checkout",
+          element: <Checkout />,
+        },
+        {
+          path: "order/:orderId",
+          element: <OrderConfirmation />,
+        },
+        {
+          path: "admin/dashboard",
+          element: <AdminDashboard />,
+        },
+        {
+          path: "admin/users",
+          element: <AdminUsers />,
+        },
+        {
+          path: "admin/orders",
+          element: <AdminOrders />,
+        },
+        {
+          path: "admin/products",
+          element: <AdminProducts />,
+        },
+        {
+          path: "admin/files",
+          element: <AdminFiles />,
+        },
+        {
+          path: "debug",
+          element: <Debug />,
+        },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <Layout />,
-    errorElement: <ErrorBoundary />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "product/:id",
-        element: <ProductDetails />,
-      },
-      {
-        path: "cart",
-        element: <Cart />,
-      },
-      {
-        path: "login",
-        element: <Login />,
-      },
-      {
-        path: "register",
-        element: <Register />,
-      },
-      {
-        path: "profile",
-        element: <Profile />,
-      },
-      {
-        path: "forgot-password",
-        element: <ForgotPassword />,
-      },
-      {
-        path: "reset-password/:token",
-        element: <ResetPassword />,
-      },
-      {
-        path: "checkout",
-        element: <Checkout />,
-      },
-      {
-        path: "order/:orderId",
-        element: <OrderConfirmation />,
-      },
-      {
-        path: "admin/dashboard",
-        element: <AdminDashboard />,
-      },
-      {
-        path: "admin/users",
-        element: <AdminUsers />,
-      },
-      {
-        path: "admin/orders",
-        element: <AdminOrders />,
-      },
-      {
-        path: "admin/products",
-        element: <AdminProducts />,
-      },
-      {
-        path: "admin/files",
-        element: <AdminFiles />,
-      },
-      {
-        path: "debug",
-        element: <Debug />,
-      },
-    ],
-  },
-]);
+    basename: "/shop",
+  }
+);
 
 export default router;
