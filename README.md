@@ -19,15 +19,19 @@ A modern, full-featured e-commerce platform built with the MERN stack (MongoDB, 
 ## 📸 Screenshots
 
 ### Homepage
+
 ![Homepage](./screenshots/screenshot-homepage.png)
 
 ### Product Details
+
 ![Product Details](./screenshots/screenshot-product-details.png)
 
 ### Shopping Cart
+
 ![Shopping Cart](./screenshots/screenshot-cart.png)
 
 ### Admin Dashboard
+
 ![Admin Dashboard](./screenshots/screenshot-admin.png)
 
 ---
