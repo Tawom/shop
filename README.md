@@ -2,27 +2,48 @@
 
 A modern, full-featured e-commerce platform built with the MERN stack (MongoDB, Express.js, React, Node.js). Features include product management, shopping cart, user authentication, order processing, admin dashboard, and inventory management.
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge)](https://your-frontend-url.onrender.com)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge)](https://brilliant-frangipane-c43adf.netlify.app)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/Tawom/shop)
 
 ---
 
 ## 🚀 Live Demo
 
-**Frontend:** [https://your-frontend-url.onrender.com](https://your-frontend-url.onrender.com)  
-**Backend API:** [https://your-backend-url.onrender.com](https://your-backend-url.onrender.com)
+**Frontend:** [https://brilliant-frangipane-c43adf.netlify.app](https://brilliant-frangipane-c43adf.netlify.app)  
+**Backend API:** [https://shop-hqa4.onrender.com](https://shop-hqa4.onrender.com)
 
-### Demo Credentials
+> **Note:** Backend is hosted on Render's free tier. First request may take 30-50 seconds to wake up the server.
+
+---
+
+## 📸 Screenshots
+
+### Homepage
+![Homepage](./screenshots/screenshot-homepage.png)
+
+### Product Details
+![Product Details](./screenshots/screenshot-product-details.png)
+
+### Shopping Cart
+![Shopping Cart](./screenshots/screenshot-cart.png)
+
+### Admin Dashboard
+![Admin Dashboard](./screenshots/screenshot-admin.png)
+
+---
+
+## Demo Credentials
+
+> Create your own account or use these test credentials:
 
 **Regular User:**
 
-- Email: demo@example.com
+- Username: demo
 - Password: demo123
 
 **Admin User:**
 
-- Email: admin@example.com
-- Password: admin123
+- Create an account and contact the repository owner to be made admin
 
 ---
 
