@@ -10,3 +10,4 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  VITE_API_URL = "https://shop-hqa4.onrender.com/api"

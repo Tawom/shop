@@ -6,5 +6,5 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   publicDir: "public", // Ensures public folder is copied to dist
-  base: "/shop/", // GitHub Pages base path
+  base: "/", // Root path for Netlify
 });

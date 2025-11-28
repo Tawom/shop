@@ -88,12 +88,8 @@ const router = createBrowserRouter(
         {
           path: "debug",
           element: <Debug />,
-        },
-      ],
-    },
-  ],
-  {
-    basename: "/shop",
+      },
+    ],
   }
 );
 
